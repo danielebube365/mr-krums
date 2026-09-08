@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mr Krums · Burgers, Shawarma &amp; Wings in Lagos</title>
+<meta name="description" content="Burgers, shawarma, wings, noodles and more. Maryland and Lekki. Pick up, takeaway and delivery, 9am to 9pm daily." />
+<link rel="icon" href="assets/logo.jpg" />
+<meta property="og:title" content="Mr Krums · Tasty is the usual" />
+<meta property="og:description" content="Burgers, shawarma, wings and noodles. Two branches in Lagos: Maryland and Lekki." />
+<meta property="og:image" content="assets/box.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ════════ NAV ════════ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" aria-label="Mr Krums home">
+    <img src="assets/logo.jpg" alt="" width="44" height="44" />
+    <span>Mr<em>.</em>Krums</span>
+  </a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="#build">The Build</a>
+    <a href="#pick">Your Pick</a>
+    <a href="#menu">Menu</a>
+    <a href="#fresh">Made Fresh</a>
+    <a href="#branches">Branches</a>
+  </nav>
+  <a class="btn btn--sm" href="https://mrkrums.daash.restaurant" target="_blank" rel="noopener">Order now</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  <div class="drawer" id="drawer">
+    <a href="#build">The Build</a>
+    <a href="#pick">Your Pick</a>
+    <a href="#menu">Menu</a>
+    <a href="#fresh">Made Fresh</a>
+    <a href="#branches">Branches</a>
+    <a class="drawer__order" href="https://mrkrums.daash.restaurant" target="_blank" rel="noopener">Order now</a>
+  </div>
+</header>
+
+<!-- ════════ HERO ════════ -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow fade">Maryland &amp; Lekki · Lagos</p>
+    <h1 class="hero__title">
+      <span class="fade">BUILT HOW</span>
+      <span class="fade d1">YOU <em>LIKE IT</em></span>
+    </h1>
+    <p class="hero__sub fade d2">Burgers, shawarma, wings and noodles. Tasty is the usual.</p>
+    <div class="hero__cta fade d3">
+      <a class="btn btn--lg" href="https://mrkrums.daash.restaurant" target="_blank" rel="noopener">
+        Order now
+        <svg class="squiggle" viewBox="0 0 120 10" aria-hidden="true"><path d="M2 6 Q 16 1 30 6 T 58 6 T 86 6 T 118 5" /></svg>
+      </a>
+      <a class="btn btn--ghost btn--lg" href="#menu">See the menu</a>
+    </div>
+  </div>
+
+  <!-- signature: their own exploded-diagram language, animated -->
+  <div class="build" id="build" aria-label="What is in your burger">
+    <div class="build__stage">
+      <img class="ing ing--burger veil" src="assets/ing-burger.png" alt="Mr Krums cheeseburger" />
+
+      <figure class="ing ing--pickles pop">
+        <img src="assets/ing-pickles.png" alt="Pickle slices" />
+        <figcaption class="tag">Pickles</figcaption>
+        <svg class="arw arw--pickles" viewBox="0 0 90 50" aria-hidden="true"><path d="M4 44 C 26 40 44 26 74 10" /><path d="M62 8 L78 8 L74 22" /></svg>
+      </figure>
+
+      <figure class="ing ing--sauce pop d1">
+        <img src="assets/ing-sauce.png" alt="Signature burger sauce" />
+        <figcaption class="tag">Burger sauce</figcaption>
+        <svg class="arw arw--sauce" viewBox="0 0 90 50" aria-hidden="true"><path d="M86 42 C 62 38 44 24 16 10" /><path d="M28 8 L12 8 L16 22" /></svg>
+      </figure>
+
+      <figure class="ing ing--lettuce pop d2">
+        <img src="assets/ing-lettuce.png" alt="Fresh lettuce" />
+        <figcaption class="tag">Lettuce</figcaption>
+        <svg class="arw arw--lettuce" viewBox="0 0 90 50" aria-hidden="true"><path d="M6 10 C 28 18 46 30 76 42" /><path d="M64 44 L80 44 L76 30" /></svg>
+      </figure>
+
+      <figure class="ing ing--cheese pop d3">
+        <img src="assets/ing-cheese.png" alt="Cheese slices" />
+        <figcaption class="tag">Cheese <span>[optional]</span></figcaption>
+        <svg class="arw arw--cheese" viewBox="0 0 90 50" aria-hidden="true"><path d="M46 46 C 46 30 46 22 46 8" /><path d="M38 18 L46 6 L54 18" /></svg>
+      </figure>
+
+      <figure class="ing ing--patty pop d4">
+        <img src="assets/ing-patty.png" alt="Beef or chicken patty" />
+        <figcaption class="tag">Beef or chicken patty</figcaption>
+        <svg class="arw arw--patty" viewBox="0 0 90 50" aria-hidden="true"><path d="M84 12 C 62 20 44 30 14 42" /><path d="M26 44 L10 44 L14 30" /></svg>
+      </figure>
+
+      <span class="scribble scribble--1 fade" aria-hidden="true">fresh daily!</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ TICKER ════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__row">
+    <span>Burgers</span><b>✦</b><span>Shawarma</span><b>✦</b><span>Wings</span><b>✦</b><span>Noodles</span><b>✦</b><span>Milkshakes</span><b>✦</b><span>Ribs</span><b>✦</b>
+    <span>Burgers</span><b>✦</b><span>Shawarma</span><b>✦</b><span>Wings</span><b>✦</b><span>Noodles</span><b>✦</b><span>Milkshakes</span><b>✦</b><span>Ribs</span><b>✦</b>
+  </div>
+</div>
+
+<!-- ════════ WHAT'S YOUR PICK (red band, interactive) ════════ -->
+<section class="pick" id="pick">
+  <div class="wrap">
+    <span class="oval fade">Regular vs Loaded Shawarma</span>
+    <h2 class="fade d1">WHAT&rsquo;S<br />YOUR <em>PICK?</em></h2>
+
+    <div class="pick__switch fade d2" role="tablist" aria-label="Shawarma style">
+      <button class="pk is-active" role="tab" aria-selected="true" data-pick="regular">Regular</button>
+      <button class="pk" role="tab" aria-selected="false" data-pick="loaded">Loaded</button>
+      <span class="pk__slider" aria-hidden="true"></span>
+    </div>
+
+    <div class="pick__body">
+      <figure class="pick__shot veil">
+        <img src="assets/combo.jpg" alt="Mr Krums shawarma with fries, sauces and a drink" width="975" height="1300" loading="lazy" />
+      </figure>
+      <div class="pick__panels">
+        <div class="pk-panel is-active" data-panel="regular">
+          <span class="torn">Regular?</span>
+          <p>The OG. Juicy and creamy proteins, wrapped and grilled the way it has always been done.</p>
+          <ul class="pk-prices">
+            <li><span>Chicken Shawarma</span><b>₦5,500</b></li>
+            <li><span>Beef Shawarma</span><b>₦5,500</b></li>
+            <li><span>Mixed Shawarma</span><b>₦5,750</b></li>
+          </ul>
+        </div>
+        <div class="pk-panel" data-panel="loaded">
+          <span class="torn">Loaded?</span>
+          <p>Same creamy wrap, double the protein. For when you are feeling that extra.</p>
+          <ul class="pk-prices">
+            <li><span>Suya Shawarma</span><b>₦6,250</b></li>
+            <li><span>Mixed Shawarma</span><b>₦5,750</b></li>
+            <li><span>Wrap Pack, with fries &amp; a drink</span><b>₦9,000</b></li>
+          </ul>
+        </div>
+        <a class="btn btn--cream" href="https://mrkrums.daash.restaurant" target="_blank" rel="noopener">
+          Order now
+          <svg class="squiggle" viewBox="0 0 120 10" aria-hidden="true"><path d="M2 6 Q 16 1 30 6 T 58 6 T 86 6 T 118 5" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ MENU ════════ -->
+<section class="section menu" id="menu">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow fade">Pick up · Takeaway · Delivery</p>
+      <h2 class="fade d1">THE MENU</h2>
+      <span class="scribble fade d2">tasty is the usual</span>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="Menu categories">
+      <button class="tab is-active" role="tab" aria-selected="true" data-tab="burgers">Burgers</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="shawarma">Shawarma</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="wings">Wings &amp; Ribs</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="combo">Combos</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="fries">Fries &amp; Sides</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="shakes">Milkshakes</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="drinks">Drinks</button>
+    </div>
+
+    <div class="panels">
+      <div class="panel is-active" data-panel="burgers">
+        <ul class="mlist">
+          <li><span class="m-n">Cheese Burger</span><span class="m-d">Beef patty, melted cheese, signature sauce</span><span class="m-p">₦6,450</span></li>
+          <li><span class="m-n">Beef Burger</span><span class="m-d">The one that started it</span><span class="m-p">₦5,750</span></li>
+          <li><span class="m-n">Chicken Burger</span><span class="m-d">Crispy chicken, lettuce, sauce</span><span class="m-p">₦5,750</span></li>
+          <li><span class="m-n">Mr Krums Sandwich</span><span class="m-d">House sandwich, stacked</span><span class="m-p">₦5,950</span></li>
+        </ul>
+      </div>
+      <div class="panel" data-panel="shawarma">
+        <ul class="mlist">
+          <li><span class="m-n">Suya Shawarma</span><span class="m-d">Ram or beef suya, wrapped and grilled</span><span class="m-p">₦6,250</span></li>
+          <li><span class="m-n">Mixed Shawarma</span><span class="m-d">Beef and chicken together</span><span class="m-p">₦5,750</span></li>
+          <li><span class="m-n">Beef Shawarma</span><span class="m-d">Creamy, loaded, grilled</span><span class="m-p">₦5,500</span></li>
+          <li><span class="m-n">Chicken Shawarma</span><span class="m-d">The everyday favourite</span><span class="m-p">₦5,500</span></li>
+          <li><span class="m-n">Noodles</span><span class="m-d">Stir fried, done Krums style</span><span class="m-p">₦5,000</span></li>
+        </ul>
+      </div>
+      <div class="panel" data-panel="wings">
+        <ul class="mlist">
+          <li><span class="m-n">BBQ Pork Ribs</span><span class="m-d">8 pieces, sticky and glazed</span><span class="m-p">₦8,500</span></li>
+          <li><span class="m-n">BBQ Chicken Wings</span><span class="m-d">Smoky, sweet, sauced</span><span class="m-p">₦6,500</span></li>
+          <li><span class="m-n">Naija Spicy</span><span class="m-d">Wings with proper heat</span><span class="m-p">₦6,500</span></li>
+          <li><span class="m-n">Spicy BBQ</span><span class="m-d">Best of both</span><span class="m-p">₦6,500</span></li>
+        </ul>
+      </div>
+      <div class="panel" data-panel="combo">
+        <ul class="mlist">
+          <li><span class="m-n">Chop Life Pack</span><span class="m-d">Cheeseburger, fries, 8 pcs BBQ pork ribs and a drink</span><span class="m-p">₦18,500</span></li>
+          <li><span class="m-n">Classic Pack</span><span class="m-d">Cheeseburger, 2 wings, fries and a drink</span><span class="m-p">₦11,500</span></li>
+          <li><span class="m-n">Wrap Pack</span><span class="m-d">Regular shawarma, fries and a drink</span><span class="m-p">₦9,000</span></li>
+        </ul>
+      </div>
+      <div class="panel" data-panel="fries">
+        <ul class="mlist">
+          <li><span class="m-n">Philly Cheesesteak Fries</span><span class="m-d">Loaded, and then some</span><span class="m-p">₦12,450</span></li>
+          <li><span class="m-n">Bacon Cheese Fries</span><span class="m-d">Bacon, cheese, no regrets</span><span class="m-p">₦8,400</span></li>
+          <li><span class="m-n">French Fries</span><span class="m-d">Golden and salted</span><span class="m-p">₦3,500</span></li>
+          <li><span class="m-n">Extra Bacon</span><span class="m-d">Because yes</span><span class="m-p">₦1,300</span></li>
+          <li><span class="m-n">Extra Cheese</span><span class="m-d">Add it to anything</span><span class="m-p">₦1,000</span></li>
+        </ul>
+      </div>
+      <div class="panel" data-panel="shakes">
+        <ul class="mlist">
+          <li><span class="m-n">Chocolate Chip Cookie</span><span class="m-d">Thick, creamy, impossible to share</span><span class="m-p">₦5,500</span></li>
+          <li><span class="m-n">Irish Coffee</span><span class="m-d">For the grown ups</span><span class="m-p">₦5,000</span></li>
+          <li><span class="m-n">Strawberry</span><span class="m-d">Made fresh</span><span class="m-p">₦5,000</span></li>
+          <li><span class="m-n">Vanilla</span><span class="m-d">The classic</span><span class="m-p">₦5,000</span></li>
+        </ul>
+      </div>
+      <div class="panel" data-panel="drinks">
+        <ul class="mlist">
+          <li><span class="m-n">5 Alive Berry Blast</span><span class="m-p">₦2,000</span></li>
+          <li><span class="m-n">Schweppes</span><span class="m-p">₦900</span></li>
+          <li><span class="m-n">Coke, Fanta or Sprite</span><span class="m-p">₦750</span></li>
+          <li><span class="m-n">Bottled Water</span><span class="m-p">₦500</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="menu__foot fade">
+      <a class="btn" href="https://mrkrums.daash.restaurant" target="_blank" rel="noopener">
+        Order the full menu
+        <svg class="squiggle" viewBox="0 0 120 10" aria-hidden="true"><path d="M2 6 Q 16 1 30 6 T 58 6 T 86 6 T 118 5" /></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ MADE FRESH ════════ -->
+<section class="section fresh" id="fresh">
+  <div class="wrap fresh__grid">
+    <div class="fresh__copy">
+      <p class="eyebrow fade">Every single order</p>
+      <h2 class="fade d1">MADE WHEN<br />YOU <em>ORDER IT</em></h2>
+      <p class="fade d2">No heat lamps, no sitting around. Buns toasted, sauce piped, patties pressed the moment the ticket lands.</p>
+      <span class="scribble fade d3">you can taste it</span>
+      <div class="fresh__stats fade d3">
+        <div><strong>2</strong><span>branches</span></div>
+        <div><strong>9<i>am</i></strong><span>doors open</span></div>
+        <div><strong>9<i>pm</i></strong><span>last order</span></div>
+      </div>
+    </div>
+    <div class="fresh__media">
+      <figure class="veil">
+        <div class="frame frame--tall">
+          <video poster="assets/hero-poster.jpg" preload="metadata" muted loop playsinline autoplay disablepictureinpicture>
+            <source src="assets/hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </figure>
+      <figure class="veil d2 fresh__offset">
+        <div class="frame frame--tall">
+          <video poster="assets/make-poster.jpg" preload="none" data-src="assets/make.mp4" muted loop playsinline disablepictureinpicture></video>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ THE SPREAD ════════ -->
+<section class="section spread">
+  <div class="wrap">
+    <header class="sec-head sec-head--center">
+      <p class="eyebrow fade">Straight out the box</p>
+      <h2 class="fade d1">THE SPREAD</h2>
+    </header>
+    <div class="spread__grid">
+      <figure class="veil"><div class="frame"><img src="assets/box.jpg" alt="Burger with BBQ ribs and fries in a branded Mr Krums box" width="975" height="1300" loading="lazy" /></div><figcaption>Chop Life Pack</figcaption></figure>
+      <figure class="veil d1"><div class="frame"><img src="assets/milkshakes.jpg" alt="Five Mr Krums milkshakes in branded cups" width="1040" height="1300" loading="lazy" /></div><figcaption>Milkshakes, four ways</figcaption></figure>
+      <figure class="veil d2"><div class="frame"><img src="assets/trays.jpg" alt="Trays of freshly made Mr Krums burgers in the kitchen" width="975" height="1300" loading="lazy" /></div><figcaption>Kitchen, mid service</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ BRANCHES (red band) ════════ -->
+<section class="branches" id="branches">
+  <div class="wrap">
+    <span class="oval fade">Two branches, one kitchen standard</span>
+    <h2 class="fade d1">FIND <em>US</em></h2>
+    <div class="branches__grid">
+      <article class="bcard fade">
+        <h3>Maryland</h3>
+        <p class="bcard__meta">Pick up · Takeaway · Delivery</p>
+        <a class="bcard__tel" href="tel:+2347086365055">0708 636 5055</a>
+        <a class="btn btn--cream btn--block" href="https://mrkrums.daash.restaurant" target="_blank" rel="noopener">Order from Maryland</a>
+      </article>
+      <article class="bcard fade d2">
+        <h3>Lekki</h3>
+        <p class="bcard__meta">Pick up · Takeaway · Delivery</p>
+        <a class="bcard__tel" href="tel:+2348123662550">0812 366 2550</a>
+        <a class="btn btn--cream btn--block" href="https://mrkrums.daash.restaurant" target="_blank" rel="noopener">Order from Lekki</a>
+      </article>
+    </div>
+    <p class="branches__hours fade">Open daily, <strong>9:00am to 9:00pm</strong></p>
+  </div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <img src="assets/logo.jpg" alt="Mr Krums" width="64" height="64" />
+      <p class="scribble">tasty is the usual</p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="#build">The Build</a>
+      <a href="#pick">Your Pick</a>
+      <a href="#menu">Menu</a>
+      <a href="#branches">Branches</a>
+    </nav>
+    <div class="footer__contact">
+      <p>Maryland <a href="tel:+2347086365055">0708 636 5055</a></p>
+      <p>Lekki <a href="tel:+2348123662550">0812 366 2550</a></p>
+      <p><a href="https://instagram.com/mr.krums" target="_blank" rel="noopener">@mr.krums</a></p>
+    </div>
+  </div>
+  <div class="footer__base">
+    <span>&copy; <span id="year">2026</span> Mr Krums</span>
+    <span>Open daily, 9am to 9pm</span>
+  </div>
+  <div class="footer__mark" aria-hidden="true">KRUMS</div>
+</footer>
+
+<a class="fab" href="https://mrkrums.daash.restaurant" target="_blank" rel="noopener" aria-label="Order from Mr Krums">Order</a>
+
+<script src="script.js"></script>
+</body>
+</html>
