@@ -330,6 +330,14 @@ h1 em,h2 em{font-style:normal;color:var(--red);}
 .veil.in .frame img,.veil.in .frame video,.veil.in.pick__shot img{transform:scale(1);}
 .pop{opacity:0;transform:translateY(16px) scale(.92);transition:opacity .7s var(--ease),transform .7s var(--ease);}
 .pop.in{opacity:1;transform:none;}
+
+/* Anything that carries its own transform must keep it through the reveal.
+   The `transform:none` rules above outrank a plain class selector, which is
+   what straightened the headings and flattened the scribbles. */
+h1.fade,h2.fade{transform:skewX(-3deg) translateY(20px);}
+h1.fade.in,h2.fade.in{transform:skewX(-3deg);}
+.scribble.fade{transform:rotate(-4deg) translateY(20px);}
+.scribble.fade.in{transform:rotate(-4deg);}
 .d1{transition-delay:.09s;}
 .d2{transition-delay:.18s;}
 .d3{transition-delay:.27s;}
@@ -364,7 +372,10 @@ h1 em,h2 em{font-style:normal;color:var(--red);}
   .build__stage{display:block;height:800px;}
   .ing{position:absolute;}
   .ing img{max-height:150px;}
+  /* centred with a transform, so the veil reveal must not clobber it */
   .ing--burger{left:50%;top:50%;transform:translate(-50%,-50%);}
+  .ing--burger.veil{transform:translate(-50%,-50%) translateY(24px);}
+  .ing--burger.veil.in{transform:translate(-50%,-50%);}
   .ing--burger img{width:390px;}
   .ing--pickles{left:4%;top:1%;}
   .ing--sauce{right:3%;top:4%;}
