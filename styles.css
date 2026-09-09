@@ -156,8 +156,8 @@ h1 em,h2 em{font-style:normal;color:var(--red);}
 }
 .ing{margin:0;position:relative;}
 .ing img{margin-inline:auto;width:auto;max-height:120px;}
-.ing--burger{grid-column:1/-1;order:-1;}
-.ing--burger img{max-height:none;width:min(100%,430px);}
+/* the burger is an <img> itself, not a figure, so size it directly */
+.ing--burger{grid-column:1/-1;order:-1;width:min(100%,400px);margin-inline:auto;}
 .tag{
   display:block;margin-top:8px;text-align:center;
   font-family:var(--f-display);font-size:.72rem;text-transform:uppercase;
@@ -369,14 +369,14 @@ h1.fade.in,h2.fade.in{transform:skewX(-3deg);}
   .tabs{margin-inline:0;padding-inline:2px;flex-wrap:wrap;overflow:visible;}
 
   /* the exploded arrangement, absolutely placed like their poster */
-  .build__stage{display:block;height:800px;}
+  .build__stage{display:block;height:780px;}
   .ing{position:absolute;}
   .ing img{max-height:150px;}
-  /* centred with a transform, so the veil reveal must not clobber it */
-  .ing--burger{left:50%;top:50%;transform:translate(-50%,-50%);}
+  /* centred with a transform, so the veil reveal must not clobber it.
+     sits slightly above centre so the cheese arrow below has room */
+  .ing--burger{left:50%;top:46%;width:340px;transform:translate(-50%,-50%);}
   .ing--burger.veil{transform:translate(-50%,-50%) translateY(24px);}
   .ing--burger.veil.in{transform:translate(-50%,-50%);}
-  .ing--burger img{width:390px;}
   .ing--pickles{left:4%;top:1%;}
   .ing--sauce{right:3%;top:4%;}
   .ing--lettuce{left:1%;bottom:14%;}
